@@ -27,7 +27,7 @@ const LLMEngineNode = ({ data, id }) => {
   const saveConfiguration = async () => {
     setIsConfiguring(true);
     try {
-      const response = await fetch('http://192.168.0.148:8000/api/llm-config', {
+      const response = await fetch('http://127.0.0.1:8000/api/llm-config', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -58,7 +58,7 @@ const LLMEngineNode = ({ data, id }) => {
   useEffect(() => {
     const loadConfig = async () => {
       try {
-        const response = await fetch(`http://192.168.0.148:8000/api/llm-config/${id}`);
+        const response = await fetch(`http://127.0.0.1:8000/api/llm-config/${id}`);
         if (response.ok) {
           const savedConfig = await response.json();
           setConfig(savedConfig.config);

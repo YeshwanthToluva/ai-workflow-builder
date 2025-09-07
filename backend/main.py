@@ -361,7 +361,7 @@ This creates a general-purpose AI chatbot!
 # CORS for React frontend - MORE PERMISSIVE
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "http://192.168.0.148:3000", "*"],  # Add wildcard for testing
+    allow_origins=["http://localhost:3000", "http://127.0.0.1:3000", "*"],  # Add wildcard for testing
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

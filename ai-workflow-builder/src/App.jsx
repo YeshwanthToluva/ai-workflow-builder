@@ -77,7 +77,7 @@ function App() {
 
   const handleBuildStack = async () => {
     try {
-      const response = await fetch('http://192.168.0.148:8000/api/validate-workflow', {
+      const response = await fetch('http://127.0.0.1:8000/api/validate-workflow', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

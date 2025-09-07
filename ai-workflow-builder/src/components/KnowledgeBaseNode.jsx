@@ -23,7 +23,7 @@ const KnowledgeBaseNode = ({ data }) => {
       const formData = new FormData();
       formData.append('file', file);
 
-      const response = await fetch('http://192.168.0.148:8000/api/upload-document', {
+      const response = await fetch('http://127.0.0.1:8000/api/upload-document', {
         method: 'POST',
         body: formData,
       });
